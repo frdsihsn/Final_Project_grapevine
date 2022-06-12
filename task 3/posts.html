@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style2.css">
+    <title>Profile Page</title>
+</head>
+<body">
+    <!-- Navigaton Bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top " style="background-color:#1E1D1F" width="100%">
+        <div class="container-fluid">
+          <nav class="navbar ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#" style="color: #ECE6F0;">
+                <img src="../task 3/resources/images/LogoMakr-6396IQ.png" alt="" width="30" height="30" class="d-inline-block align-text-top ">
+                grapevine
+              </a>
+            </div>
+          </nav>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto" >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html" style="color: #ECE6F0;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: #ECE6F0;">Messages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: #ECE6F0;">Notifications</a>
+              </li>
+              <li>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="background-color: #ECE6F0; color: #7800BD; border: 1px solid #7800BD;">
+                <button class="btn" type="submit" style="background-color: #7800BD; color: #ECE6F0;">Search</button>
+              </form>
+              </li>
+              <li class="nav-item dropdown me-auto">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="../task 3/resources/profile.svg" alt="" class="ps-3">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Help center</a></li>
+                  <li><a class="dropdown-item" href="#">Account settings</a></li>
+                  <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Main Content -->
+    <!-- col-4 for website content image -->
+
+    <div class="container" style="font-family:'Times New Roman', Times, serif; padding-top: 80px;">
+        <div class="row">
+            <div class="col-md-6 border rounded px-0">
+                    <iframe img src="/Final_Project_grapevine/task 3/resources/images/posts/website.png" width="100%" height="800" class="image-for-website" scrolling="no" name="box-for-webpage" alt=""></iframe>
+            </div>
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading text-center">
+                        <!-- Project Name -->
+                        <hr>
+                        <h3 class="panel-title">Web Development Page</h3>
+                        <!-- Add a dropdown box here to include different images of the webpage-->
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              Select Page to view
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item" href="/Final_Project_grapevine/task 3/resources/images/posts/website.png" target="box-for-webpage">Webpage</a></li>
+                              <li><a class="dropdown-item" href="/Final_Project_grapevine/task 3/resources/images/posts/image-webpage-contactus.jpg" target="box-for-webpage">Contact Us</a></li>
+                              <li><a class="dropdown-item" href="/Final_Project_grapevine/task 3/resources/images/posts/image-webpage-search.png"target="box-for-webpage">Search Function</a></li>
+                            </ul>
+                          </div>
+                        <hr>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                                <div class="d-flex inline py-2">
+                                <img src="/Final_Project_grapevine/task 3/resources/images/posts/johndoe.jpg" class=" img rounded-circle w-25" alt="">
+                                <h2 class="my-auto px-5">John Doe</h2>
+                                </div>
+                                <!-- Here to input project description -->
+                                <p>
+                                    This website is a project for the course of Web Development. It is a social media website that allows users to share their posts and comments. It is a project for the course of Web Development. It is a social media website that allows users to share their posts and comments.
+                                </p>
+                                <hr>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Include a comment section here -->
+
+                <div class="panel panel-default" style="font-family:'Times New Roman', Times, serif;">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Comments :</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="d-flex inline py-2">
+                                <img src="/Final_Project_grapevine/task 3/resources/images/posts/johndoe.jpg" class=" img rounded-circle" style="width: 50px;" alt="">
+                                <h4 class="my-auto px-5">Fake John Doe</h4>
+                            </div>
+                                <!-- Insert comments here -->
+                                <p>
+                                    This was my original idea! Well done.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="d-flex inline py-2">
+                                <img src="/Final_Project_grapevine/task 3/resources/images/posts/tom.png" class="img rounded-circle" style="width: 50px;" alt="">
+                                <h4 class="my-auto px-5">Tom the cat</h4>
+                            </div>
+                                <!-- Insert comments here -->
+                                <p>
+                                    Awesome, I can catch Jerry now
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="d-flex inline py-2">
+                                <img src="/Final_Project_grapevine/task 3/resources/images/posts/jerry.png" class=" img rounded-circle" style="width: 50px;" alt="">
+                                <h4 class="my-auto px-5">Jerry the rat</h4>
+                            </div>
+                                <!-- Insert comments here -->
+                                <p>
+                                    I am so excited to see this project!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer with copyright -->
+
+    <div class="footer bg-light">
+        <p>&copy; Copyright 2022 grapevine</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
