@@ -1,0 +1,4 @@
+.home-gallery img:hover {
+    transform: scale(104%);
+    transition: 70ms;
+}
