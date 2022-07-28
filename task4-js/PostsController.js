@@ -47,6 +47,7 @@ class PostsController {
       .then((response) => response.json())
       .then((data) => {
         console.log("Success:", data);
+        publishFromLocalStorage();
       })
       .catch((error) => {
         console.error("Error:", error);
@@ -54,10 +55,6 @@ class PostsController {
   }
 
   delete(id) {
-    const data = {
-      postId: id,
-    };
-
     fetch(`http://localhost:8080/del/${id}`, {
       method: "DELETE",
     })
