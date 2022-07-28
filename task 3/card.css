@@ -1,17 +1,48 @@
-.card-container {
-  margin-top: 90px;
+body {
+  font-family: "Roboto", sans-serif;
 }
 
+.card-container {
+  padding-top: 90px;
+}
+.cardImage {
+  border: none;
+  border-radius: 0;
+}
 .card {
+  display: flex;
   margin: 10px 0px;
+  border: none;
+  border-radius: 0;
+}
+
+.card:hover > .cardImage {
+  opacity: 0.5;
+}
+
+.card:hover {
+  transform: scale(105%);
+  transition: 100ms;
+}
+.card:hover .top-layout {
+  opacity: 1 !important;
+}
+
+.top-layout {
+  opacity: 0;
+}
+
+.card-time {
+  color: #c5c2c7;
+  font-size: smaller;
 }
 
 .addPostButton {
   position: fixed;
   width: 75px;
   height: 75px;
-  right: 20px;
-  top: 400px;
+  right: 3%;
+  top: 80%;
 
   background-color: #1e1d1f;
   /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */

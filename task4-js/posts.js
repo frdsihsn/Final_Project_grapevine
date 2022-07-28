@@ -4,15 +4,15 @@ function publishPost() {
   const post = myController.posts[0].post;
   const desc = myController.posts[0].desc;
   const user = myController.posts[0].user;
-  postList.innerHTML += ` <div class="col-4"> <div class="card bg-dark text-white">
+  postList.innerHTML += ` <div class="col-12 col-sm-6 col-md-6 col-lg-4"> <div class="card bg-dark text-white">
             <img
               src="${img}"
-              class="card-img cardImage"
+              class="card-img-top img-raised cardImage"
               alt="..."
             />
-            <div class="card-img-overlay cardDesc">
-              <h5 class="card-title">${post}</h5>
-              <p class="card-text">${user}</p>
+            <div class="card-img-overlay top-layout cardDesc">
+              <h2 class="card-title">${post}</h2>
+              <h4 class="card-text">${user}</h4>
               <p class="card-text">${desc}</p>
               <p class="card-text">Last updated 3 mins ago</p>
             </div>
@@ -27,17 +27,17 @@ function publishFromLocalStorage() {
     const post = storagePost[i].post;
     const desc = storagePost[i].desc;
     const user = storagePost[i].user;
-    postList.innerHTML += ` <div class="col-4"> <div class="card bg-dark text-white">
+    postList.innerHTML += ` <div class="col-12 col-sm-6 col-md-6 col-lg-4"> <div class="card bg-dark text-white">
             <img
               src="${img}"
-              class="card-img cardImage"
+              class="card-img-top img-raised cardImage"
               alt="..."
             />
-            <div class="card-img-overlay cardDesc">
-              <h5 class="card-title">${post}</h5>
-              <p class="card-text">${user}</p>
+            <div class="card-img-overlay top-layout cardDesc">
+              <h2 class="card-title">${post}</h2>
+              <h4 class="card-text">${user}</h4>
               <p class="card-text">${desc}</p>
-              <p class="card-text">Last updated 3 mins ago</p>
+              <p class="card-text card-time">Last updated 3 mins ago</p>
             </div>
           </div> </div>`;
   }
