@@ -1,0 +1,116 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.card-container {
+  padding-top: 90px;
+}
+.cardImage {
+  border: none;
+  border-radius: 0;
+}
+.card {
+  display: flex;
+  margin: 10px 0px;
+  border: none;
+  border-radius: 0;
+}
+
+.card:hover > .cardImage {
+  opacity: 0.5;
+}
+
+.card:hover {
+  transform: scale(105%);
+  transition: 100ms;
+}
+.card:hover .top-layout {
+  opacity: 1 !important;
+}
+
+.top-layout {
+  opacity: 0;
+}
+
+.card-time {
+  color: #c5c2c7;
+  font-size: smaller;
+}
+
+.addPostButton {
+  position: fixed;
+  width: 75px;
+  height: 75px;
+  right: 3%;
+  top: 80%;
+
+  background-color: #1e1d1f;
+  /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  box-shadow: inset -5px -5px 250px rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(42px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.addPostButton:hover {
+  background-color: #7800bd;
+  transform: scale(105%);
+  transition: 70ms;
+}
+
+.plusSign {
+  position: absolute;
+  width: 75px;
+  height: 65px;
+  left: 0px;
+  top: 0px;
+  margin-top: 5px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 73px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  color: #ece6f0;
+}
+
+.plusSign:hover {
+  color: #1e1d1f;
+}
+
+.form-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.form-popup {
+  display: none;
+  width: 359px;
+  margin: auto;
+}
+.button {
+  text-align: center;
+  margin: 0;
+}
+.publish-btn {
+  padding: 9px 90px;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid white;
+  margin: 5px auto;
+  width: 97%;
+  background-color: #1e1d1f;
+  color: #ece6f0;
+}
+
+.publish-btn:hover {
+  background-color: #7800bd;
+}

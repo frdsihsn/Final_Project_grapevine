@@ -1,0 +1,8 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.home-gallery img:hover {
+  transform: scale(104%);
+  transition: 70ms;
+}
